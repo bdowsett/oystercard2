@@ -61,6 +61,7 @@ This week's challenge went back over the basics we covered last week in [Boris B
 - Write up a plan for how you will interact with your code and manually test in IRB :white_check_mark:
 - Write a test for teh `deduct method, see it fail :white_check_mark:
 - Implement the method, see the test pass :white_check_mark:
+
 **Self-imposed stretch tasks**
 - Enforce minimum balance. We wrote a test that checks the `.deduct` method throws an exception if the new balance would fall below a set minimum value. We set a `MIN_BALANCE` default value of `0` to prevent the `Oystercard` from going into a negative balance. Upon initializing `@min_balance` was created with a user input value to potentially allow an overdraft feature to be added in the future. If no value for `@min_balance` was stated, it defaulted to a value of `0` :sunglasses:
 
