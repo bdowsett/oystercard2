@@ -1,8 +1,7 @@
 require 'oystercard'
 
 describe Oystercard do
-  it 'has a balance' do
-    # oystercard = Oystercard.new
-    expect(subject.balance).to eq true  # we want oystercard.balance responds to a balance method
+  it 'has a default balance' do
+    expect(subject.balance).to eq Oystercard::DEFAULT_BALANCE  # we want oystercard.balance to equal the set default balance
   end
 end
