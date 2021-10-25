@@ -1,6 +1,69 @@
-# Oystercard Challenge
+# Oystercard Challenge 
 
-This week's challenge will start with going back over the basics we covered last week in Boris Bikes, giving you the chance to reinforce what you learned last week. You'll then be challenged to build a more complex system which should really stretch your skills in Ruby, TDD and object-oriented design.
+Task from Week 2 on the Makers bootcamp. This task was completed daily during pair-programming sessions with a new partner daily.
+
+Day 1 partner --> [Ginny Thomas](https://github.com/ginnyamazed) - Challenges 1 to 7 completed. We paired using the driver-navigator technique to push-pull commits to our own machines as we took turns. I also felt that we took our time to carefully read, digest and discuss the requirements of each challenge extensively which made writing the tests and the code go smoothly.
+
+## About the task
+
+This week's challenge went back over the basics we covered last week in [Boris Bikes](https://github.com/RPGrimes/Boris_Bikes), giving us the chance to reinforce what we learned last week. We were then challenged to build a more complex system which should really stretch your skills in Ruby, TDD and object-oriented design.
+
+## Challenges
+#### Challenge 1 - Create Gemfile
+**Learning Objectives covered**
+- Construct a valid Gemfile  :white_check_mark:
+- Specify a correct source for gems :white_check_mark:
+- Specify the latest Ruby version :white_check_mark:
+- Add the `rspec` gem to 'test' and 'development' groups :white_check_mark:
+- Commit only this Gemfile :white_check_mark:
+
+#### Challenge 2 - Create RSpec Conventional Files
+**Learning Objectives covered**
+- Generate conventional files (helper and config) for an RSpec project using a command-line option of the rspec executable file :white_check_mark:
+- Follow RSpec naming convention for files and folders :white_check_mark:
+- Create a test file for the Oystercard class without any tests but with a `describe` block (doesn't exist yet) :white_check_mark:
+
+#### Challenge 3 - Learn Debugging Basics
+**Learning Objectives covered**
+- Write down the tyoe of error in the issue comments :white_check_mark:
+- Write down the file path where the error happened :white_check_mark:
+- Write down the line number of the error :white_check_mark:
+- Use the Ruby Documentation to find out what the error means :white_check_mark:
+- Suggest one way of solving the error :white_check_mark:
+
+#### Challenge 4 - Add the Balance
+**Learning Objectives covered**
+- Write up a plan for how you will interact with your code and manually test in IRB :white_check_mark:
+- Create a unit test for the `Oystercard` class :white_check_mark:
+- Write a failing test that checks that a new card has a `balance` :white_check_mark:
+- Write code that will make this test pass :white_check_mark:
+- Now refactor by setting the balance in `initialize` using an instance variable :white_check_mark:
+- Remove the balance method entirely and replace with an `attr_reader` :white_check_mark:
+
+#### Challenge 5 - Enable 'top up' Functionality
+**Learning Objectives covered**
+- Write up a plan for how you will interact with your code and manually test in IRB :white_check_mark:
+- Write a test for the `.top_up` method :white_check_mark:
+- Make sure the test fails before implementing the method :white_check_mark:
+- Implement the method to make the test pass :white_check_mark:
+
+#### Challenge 6 - Enforce Maximum Balance
+**Learning Objectives covered**
+- Write up a plan for how you will interact with your code and manually test in IRB :white_check_mark:
+- Write a test that checks the `.top_up` method throws an exception if the new balance would exceed the limit :white_check_mark:
+- Use a constant to store the limit :white_check_mark:
+- Implement the limit in the `.top_up` method. Use an inline `if` statement to check if the limit would be exceeded :white_check_mark:
+- Make the error message include the limit value :white_check_mark:
+- Use interpolation to keep your code DRY :white_check_mark:
+
+#### Challenge 6 - Deduct the Money
+**Learning Objectives covered**
+- Write up a plan for how you will interact with your code and manually test in IRB :white_check_mark:
+- Write a test for teh `deduct method, see it fail :white_check_mark:
+- Implement the method, see the test pass :white_check_mark:
+**Self-imposed stretch tasks**
+- Enforce minimum balance. We wrote a test that checks the `.deduct` method throws an exception if the new balance would fall below a set minimum value. We set a `MIN_BALANCE` default value of `0` to prevent the `Oystercard` from going into a negative balance. Upon initializing `@min_balance` was created with a user input value to potentially allow an overdraft feature to be added in the future. If no value for `@min_balance` was stated, it defaulted to a value of `0` :sunglasses:
+
 
 ## Reminder of this week's goals from the [Week Outlines](https://github.com/makersacademy/course/blob/main/week_outlines.md)
 
