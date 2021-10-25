@@ -8,7 +8,7 @@ class Oystercard
   end
 
   def top_up(value)
-    5 #@balance = value + @balance
+    @balance += value
   end
 end
 
