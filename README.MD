@@ -59,7 +59,7 @@ This week's challenge went back over the basics we covered last week in [Boris B
 #### Challenge 7 - Deduct the Money
 **Learning Objectives covered**
 - Write up a plan for how you will interact with your code and manually test in IRB :white_check_mark:
-- Write a test for teh `deduct method, see it fail :white_check_mark:
+- Write a test for the `deduct method, see it fail :white_check_mark:
 - Implement the method, see the test pass :white_check_mark:
 
 **Self-imposed stretch tasks**
